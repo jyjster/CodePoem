@@ -127,7 +127,11 @@ def life(chaos = 100):
             # you emerge from ashes stronger, wiser, older, more resilient than before
             # beauty + vibrancy + strength + resiliency        
         
-        return 
+        # return 
+        
+        # NEW
+        
+        return garden
     
 
 
