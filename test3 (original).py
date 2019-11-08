@@ -37,8 +37,7 @@ REFERENCES
 # you are the turtle
 import turtle as you
 
-# NEW
-# beauty, vibrancy, strength, resiliency = 0, 0, 0, 0
+
 
 shell = you.Turtle()
 
@@ -53,6 +52,10 @@ except:
 
 # life is defined in terms of chaos
 def life(chaos = 100):
+   
+    # NEW
+    beauty, vibrancy, strength, resiliency = 0, 0, 0, 0
+    
     
     if chaos < 10:
         return "no chance for positive change"
@@ -94,7 +97,8 @@ def life(chaos = 100):
             fury += 1
             burning *= 2
             
-        # seeds = chaos * (beauty + vibrancy + strength + resiliency)
+        # NEW    
+        seeds = chaos * (beauty + vibrancy + strength + resiliency)
         
         # the fire was meant to happen
         fire.right(check)
