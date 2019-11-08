@@ -54,7 +54,7 @@ except:
 def life(chaos = 100):
    
     # NEW
-    beauty, vibrancy, strength, resiliency = 0, 0, 0, 0
+    # beauty, vibrancy, strength, resiliency = 0, 0, 0, 0
     
     
     if chaos < 10:
@@ -98,7 +98,7 @@ def life(chaos = 100):
             burning *= 2
             
         # NEW    
-        seeds = chaos * (beauty + vibrancy + strength + resiliency)
+        # seeds = chaos * (beauty + vibrancy + strength + resiliency)
         
         # the fire was meant to happen
         fire.right(check)
@@ -122,7 +122,7 @@ def life(chaos = 100):
         grow.right(on)
 
         # NEW 
-        # garden = seeds + grow
+        # garden = "seeds"+ grow
         
         # you go back to/visit where you were before the chaos/fire
         fire.backward(chaos)
@@ -134,7 +134,6 @@ def life(chaos = 100):
         return 
         
         # NEW
-        
         # return garden
     
 
@@ -147,6 +146,7 @@ shell.left(90)
 
 
 print(life())
+print("tree")
 
 # we look forward to how you grow
 you.done()
