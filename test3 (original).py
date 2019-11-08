@@ -37,8 +37,8 @@ REFERENCES
 # you are the turtle
 import turtle as you
 
-#NEW
-beauty, vibrancy, strength, resiliency = 0, 0, 0, 0
+# NEW
+# beauty, vibrancy, strength, resiliency = 0, 0, 0, 0
 
 shell = you.Turtle()
 
@@ -83,7 +83,7 @@ def life(chaos = 100):
         ['regrets', 'debris'].clear()
 
         # NEW
-        seeds = 0
+        # seeds = 0
         
         # you struggle, it burns. it will hurt and there will be pain.
                    # the longer the fire, the more pain
@@ -94,7 +94,7 @@ def life(chaos = 100):
             fury += 1
             burning *= 2
             
-        seeds = chaos * (beauty + vibrancy + strength + resiliency)
+        # seeds = chaos * (beauty + vibrancy + strength + resiliency)
         
         # the fire was meant to happen
         fire.right(check)
@@ -118,7 +118,7 @@ def life(chaos = 100):
         grow.right(on)
 
         # NEW 
-        garden = seeds + grow
+        # garden = seeds + grow
         
         # you go back to/visit where you were before the chaos/fire
         fire.backward(chaos)
@@ -127,11 +127,11 @@ def life(chaos = 100):
             # you emerge from ashes stronger, wiser, older, more resilient than before
             # beauty + vibrancy + strength + resiliency        
         
-        # return 
+        return 
         
         # NEW
         
-        return garden
+        # return garden
     
 
 garden = shell
