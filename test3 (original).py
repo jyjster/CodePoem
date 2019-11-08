@@ -134,11 +134,13 @@ def life(chaos = 100):
         return garden
     
 
-
-
 garden = shell
 
-garden.left(90)
+# garden.left(90)
+
+# NEW
+shell.left(90)
+
 
 print(life())
 
