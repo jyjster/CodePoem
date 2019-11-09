@@ -33,13 +33,19 @@ REFERENCES
               https://guide.freecodecamp.org/python/return-statement/
         
 '''
+import random
 
 # you are the turtle
 import turtle as you
 
-
-
 shell = you.Turtle()
+
+# TO DO change name of length variable
+
+shell.penup()
+shell.goto(0, -length)
+shell.pendown()    
+
 
 # can't separate a turtle from its shell
     # similar to how you can't separate yourself/change/life/progress from chaos
@@ -52,7 +58,8 @@ except:
 
 # life is defined in terms of chaos
 def life(chaos = 100):
-   
+    
+
     # NEW
     # beauty, vibrancy, strength, resiliency = 0, 0, 0, 0
     
@@ -73,7 +80,6 @@ def life(chaos = 100):
         growth = fire
         
          # sometimes it's needed
-        import random
         sometimes_is_needed = [True, False][random.randint(0,1)]
         
         # don't fear it or run away
