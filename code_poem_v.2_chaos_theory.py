@@ -14,7 +14,7 @@ REFERENCES
 
     CODE
         code for coding a fractal tree graphic in Python via turtle
-        https://stackoverflow.com/questions/29154455/making-a-tree-using-turtle-that-is-right-side-up
+        https://www.simplifiedpython.net/python-turtle-module/
     POEM
         my poem was inspired by this poem about chaos theory
         https://www.instagram.com/p/BtAQZ-eh_VF/?igshid=1hhj63ed9y5rf
@@ -40,6 +40,7 @@ import turtle as you
 
 shell = you.Turtle()
 
+
 # TO DO change name of length variable
 length = 6 * random.randint(10, 20)
 
@@ -49,8 +50,7 @@ shell.pendown()
 
 shell.left(90)
 
-# CHANGE LATER
-shell.speed(30)
+shell.speed(random.randint(3, 15))
 
 shell.color('Black')
 shell.pensize(3)
@@ -72,8 +72,9 @@ def life(chaos = 100):
     sfcolor = ["Lemon Chiffon", "Dim Gray", "Slate Gray", "Cadet Blue", "Medium Aquamarine", "Dark Khaki", "Khaki", "Light Sea Green", "Dark Slate Gray", "Peach Puff", "Gold", "Light Goldenrod", "Goldenrod", "Dark Goldenrod", "Indian Red", "Saddle Brown", "Sienna", "Peru", "Burlywood", "Sandy Brown", "Chocolate", "Firebrick", "Brown", "Black"]
     shell.color(random.choice(sfcolor))
 
-    if(chaos<10):
-        return
+    if chaos < 10:
+        return "no chance for positive change"
+    
     else:
         # left =
         # right = 2 * left
