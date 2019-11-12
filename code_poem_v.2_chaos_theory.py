@@ -76,49 +76,71 @@ def life(chaos = 100):
         return "no chance for positive change"
     
     else:
-        # left =
-        # right = 2 * left
-
-
-        shell.forward(chaos)
-        shell.left(30)
-        life(3*chaos/4)
-        shell.right(60)
-        life(3*chaos/4)
-        shell.left(30)
-        shell.backward(chaos)
-
-    # NEW
-    # beauty, vibrancy, strength, resiliency = 0, 0, 0, 0
-
-    """
-
-    if chaos < 10:
-        return "no chance for positive change"
-
-
-    else:
         # before the fire, initializing variables
-        on, check, yes = 30, 30, 60
+        yes, nope, on = 30, 30, 60
         struggle, fury, flames, burning = 0, 0, 0, 0
 
         # fire begins
         fire = shell
-
-         # growth is fire / growth is like fire
+        
+        # growth is fire / growth is like fire
         growth = fire
 
-         # sometimes it's needed
+        # sometimes it's needed
         sometimes_is_needed = [True, False][random.randint(0,1)]
-
+        
         # don't fear it or run away
         ['inhibitions', 'doubt', 'fear'].clear()
-
+        
         # go forward into the fire, into the chaos
         fire.forward(chaos)
-
+        
         # clear out any debris
         ['regrets', 'debris'].clear()
+        
+
+        # you struggle, it burns. it will hurt and there will be pain.
+                   # the longer the fire, the more pain
+                   # planting the seeds for what's to come / what comes next
+        for moment in range(len('chaos')):
+            flames += 1
+            struggle *= 2
+            fury += 1
+            burning *= 2
+        
+        
+        # shell.forward(chaos)
+        fire.left(nope)
+        # life(3*chaos/4)
+        
+        # the fire dies down, the chaos also
+        less_chaos = 3 * chaos / 4
+        # life returns to a period of
+        life(less_chaos)
+        # the fire is done for now. it has has gone/left. the fire has ran its course
+        
+        # ashes are remaining
+        ashes = fire
+        # the ashes have new life
+        grow = ashes
+        
+        # from the ashes/seeds you grow
+        grow.right(on)
+        life(less_chaos)
+        
+        fire.left(yes)
+        
+        # you go back to/visit where you were before the chaos/fire
+        fire.backward(chaos)
+        
+        return
+
+
+    """
+    else:
+
+
+        
 
         # NEW
         # seeds = 0
@@ -174,7 +196,7 @@ def life(chaos = 100):
 
 
 
-garden = shell
+tree = shell
 
 # garden.left(90)
 
