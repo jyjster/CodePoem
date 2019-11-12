@@ -3,7 +3,7 @@
 This program is for Arts && Code && Interacitivty's Project 3, Code Poetry 011.
 
 By: Jordan Y. Jackson
-Last Modified: 11/08/19, 12AM
+Last Modified: 11/11/19, 11PM
 
 REFERENCES
 
@@ -40,12 +40,11 @@ import turtle as you
 
 shell = you.Turtle()
 
-
 # TO DO change name of length variable
-length = 6 * random.randint(10, 20)
+branch = 6 * random.randint(10, 20)
 
 shell.penup()
-shell.goto(0, -length)
+shell.goto(0, -branch)
 shell.pendown()
 
 shell.left(90)
@@ -55,7 +54,6 @@ shell.speed(random.randint(3, 15))
 shell.color('Black')
 shell.pensize(3)
 shell.screen.title("Your Tree")
-
 
 # can't separate a turtle from its shell
     # similar to how you can't separate yourself/change/life/progress from chaos
@@ -69,8 +67,8 @@ except:
 # life is defined in terms of chaos
 def life(chaos = 100):
     
-    sfcolor = ["Lemon Chiffon", "Dim Gray", "Slate Gray", "Cadet Blue", "Medium Aquamarine", "Dark Khaki", "Khaki", "Light Sea Green", "Dark Slate Gray", "Peach Puff", "Gold", "Light Goldenrod", "Goldenrod", "Dark Goldenrod", "Indian Red", "Saddle Brown", "Sienna", "Peru", "Burlywood", "Sandy Brown", "Chocolate", "Firebrick", "Brown", "Black"]
-    shell.color(random.choice(sfcolor))
+    road_taken = ["Lemon Chiffon", "Dim Gray", "Slate Gray", "Cadet Blue", "Medium Aquamarine", "Dark Khaki", "Khaki", "Light Sea Green", "Dark Slate Gray", "Peach Puff", "Gold", "Light Goldenrod", "Goldenrod", "Dark Goldenrod", "Indian Red", "Saddle Brown", "Sienna", "Peru", "Burlywood", "Sandy Brown", "Chocolate", "Firebrick", "Brown", "Black"]
+    shell.color(random.choice(road_taken))
 
     if chaos < 10:
         return "no chance for positive change"
@@ -204,7 +202,7 @@ tree = shell
 # shell.left(90)
 
 
-print(life(length))
+print(life(branch))
 print("tree")
 
 # we look forward to how you grow
