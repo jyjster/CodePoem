@@ -41,10 +41,20 @@ import turtle as you
 shell = you.Turtle()
 
 # TO DO change name of length variable
+length = 6 * random.randint(10, 20)
 
 shell.penup()
 shell.goto(0, -length)
 shell.pendown()    
+
+shell.left(90)
+
+# CHANGE LATER
+shell.speed(30)
+
+shell.color('Black')
+shell.pensize(3)
+shell.screen.title("Your Tree")
 
 
 # can't separate a turtle from its shell
@@ -59,6 +69,9 @@ except:
 # life is defined in terms of chaos
 def life(chaos = 100):
     
+    sfcolor = ["Lemon Chiffon", "Dim Gray", "Slate Gray", "Cadet Blue", "Medium Aquamarine", "Dark Khaki", "Khaki", "Light Sea Green", "Dark Slate Gray", "Peach Puff", "Gold", "Light Goldenrod", "Goldenrod", "Dark Goldenrod", "Indian Red", "Saddle Brown", "Sienna", "Peru", "Burlywood", "Sandy Brown", "Chocolate", "Firebrick", "Brown", "Black"]
+    shell.color(random.choice(sfcolor))    
+    
 
     # NEW
     # beauty, vibrancy, strength, resiliency = 0, 0, 0, 0
@@ -69,6 +82,7 @@ def life(chaos = 100):
       
         
     else: 
+        '''
         # before the fire, initializing variables
         on, check, yes = 30, 30, 60  
         struggle, fury, flames, burning = 0, 0, 0, 0
@@ -141,6 +155,15 @@ def life(chaos = 100):
         
         # NEW
         # return garden
+        '''
+
+        shell.forward(chaos)
+        shell.left(30)
+        life(3*chaos/4)
+        shell.right(60)
+        life(3*chaos/4)
+        shell.left(30)
+        shell.backward(chaos)        
     
 
 garden = shell
@@ -151,7 +174,7 @@ garden = shell
 shell.left(90)
 
 
-print(life())
+print(life(length))
 print("tree")
 
 # we look forward to how you grow
