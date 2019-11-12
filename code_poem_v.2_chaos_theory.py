@@ -14,7 +14,11 @@ REFERENCES
 
     CODE
         code for coding a fractal tree graphic in Python via turtle
-        https://www.simplifiedpython.net/python-turtle-module/
+        
+        V.1
+             https://stackoverflow.com/questions/29154455/making-a-tree-using-turtle-that-is-right-side-up
+        V.2
+             https://www.simplifiedpython.net/python-turtle-module/
     POEM
         my poem was inspired by this poem about chaos theory
         https://www.instagram.com/p/BtAQZ-eh_VF/?igshid=1hhj63ed9y5rf
@@ -105,7 +109,6 @@ def life(chaos = 100):
             struggle *= 2
             fury += 1
             burning *= 2
-        
         
  
         fire.left(a_little)
